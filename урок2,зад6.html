@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+      var a,b,operation;
+    a=+prompt("Введите a");
+    b=+prompt("Введите b");
+     function plus(a,b){
+         return(a+b);
+     }
+     function minus(a,b){
+         return(a-b);
+     }
+     function multy(a,b){
+         return(a*b);
+     }
+     function del(a,b){
+         return(a/b);
+     }
+
+     function mathOperation(arg1, arg2, operation){
+        
+         switch(operation){
+             case 1: alert("Сумма="+plus(a,b));
+             break;
+             case 2: alert("Разность="+minus(a,b));
+             break;
+             case 3:alert("Произведение="+multy(a,b));
+             break;
+             case 4: alert("Частное="+del(a,b));
+             break;
+        default:
+            alert("Вы не выбрали функцию!!!");
+            
+         }
+     }
+     operation=+prompt("Выберите операцию: 1:+,2:-,3:*,4:/");
+     mathOperation(a, b, operation);
+    </script>
+</body>
+</html>
