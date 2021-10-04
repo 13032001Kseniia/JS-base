@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+     var goods=[{name:"goods1",count:1,price:100},{name:"goods2",count:2,price:200},{name:"goods3",count:3,price:300},{name:"goods4",count:4,price:400}];
+     function countBasketPrice(arr){
+        let count=0;
+       for(let sum of arr){
+           count=(sum.count*sum.price)+count;
+           
+       }  
+       document.write(count);
+     }
+     countBasketPrice(goods);
+    </script>
+</body>
+</html>
