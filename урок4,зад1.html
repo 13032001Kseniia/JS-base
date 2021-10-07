@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var n=prompt("Ведите число от 0 до 999");
+    var number={};
+  
+    function trueNumber(a){
+        if(a>0 && a<=999){
+        let num=a.split("");
+         console.log(num);
+        let c=num.length;
+    switch(c){
+        case(1):
+        number["единицы"]=num[0];
+        console.log(number);
+        break;
+        case(2):
+        number["единицы"]=n[1];
+        number["десятки"]=n[0];
+        console.log(number);
+        break;
+        case(3):
+        number["единицы"]=n[2];
+        number["десятки"]=n[1];
+        number["сотни"]=n[0];
+        console.log(number);
+        break;
+    }
+}
+else{
+    console.log(number);
+    alert("ВЫ ввели неправильное число!!!");
+}
+    }
+    trueNumber(n);
+    </script>
+</body>
+</html>
