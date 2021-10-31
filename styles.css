@@ -1,0 +1,17 @@
+#snake-start{
+    background-color: cyan;
+    
+}
+#snake-renew{
+    background-color: cyan;
+    
+}
+
+#snake-field{
+    background-color: darkgrey;
+    color:darkgray
+}
+.food-unit{
+    background-color:deeppink ;
+    color:darkorchid;
+}
